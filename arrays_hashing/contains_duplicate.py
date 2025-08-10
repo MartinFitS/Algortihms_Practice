@@ -23,13 +23,13 @@ def contains_duplicate(nums):
     for number in nums:
         if number in container:
             # If the number already exists in the set, a duplicate was foun
-            print("True")
             return True
         else:
             #Otherwise, add the number to the set
             container.add(number)
     #If no duplicates were found, return False
-    print("False")
     return False
 
-contains_duplicate([1,2,3,4,5,6,6])
+result = contains_duplicate([1,2,3,4,5,6,6])
+
+print(result)
